@@ -43,6 +43,10 @@ list(
 ) -> station_list
 
 stations_to_check <- unlist(station_list)
-stations_to_check[stations_to_check %in% all_aust_stations$short_id]
+length(stations_to_check[stations_to_check %in% all_aust_stations$short_id])
 
-save(all_aust_stations, file = "all_aust_stations.RData")
+# save(all_aust_stations, file = "data/all_aust_stations.RData")
+
+bom_stations <- read.fwf("tempdata/stations.txt", skip = 4,
+                         widths = c(7, 6, 41, 8, 8, 9, 10, 15, 4, 11,
+                                    9, 7), n = 5, na.strings = "..")
