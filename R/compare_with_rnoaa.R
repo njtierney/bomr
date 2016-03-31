@@ -20,7 +20,7 @@ ex_stations$meta$totalCount ## total number of stations in Australia available
 ex_stations$data[ , c("name", "id")] ## example stations, with name and id
 
 # Let me see if I can pull all the Australian stations...
-ex_stations <- ncdc_stations(limit = 1000,
+ex_stations <- ncdc_stations(limit = 10,
                              datasetid = "GHCND",
                              datatypeid = "TMAX",
                              locationid = "FIPS:AS")
@@ -95,3 +95,22 @@ missing_stations / length(ex_aust_not_noaa)
 # It looks like around 15-20% of these stations aren't in the NOAA system, but
 # the rest are (based on a sample of 200 of the stations that we pulled from the
 # Australia monitor file but that didn't show up from the NOAA API call).
+
+# Let me try to pull *all* the Australian stations (turns out, before I
+# was limiting to just stations with the global daily summary and with
+# maximum temperature data)
+
+tot_stations <- ncdc_stations(limit = 1,
+                             locationid = "FIPS:AS")$meta$totalCount
+start_points <- seq(from = 1, to = tot_stations, by = 1000)
+for(i in 1:length(start_points)){
+  ex <- ncdc_stations(limit = 1000,
+                      locationid = "FIPS:AS",
+                      offset = start_points[i])$data
+  if(i == 1){
+    all_noaa_stations <- ex
+  } else {
+    all_noaa_stations <- rbind(all_noaa_stations, ex)
+  }
+}
+dim(all_noaa_stations)
