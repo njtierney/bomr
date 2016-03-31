@@ -70,3 +70,22 @@ both_stations <- inner_join(bom_stations[ , c("site_name", "site", "lat", "lon")
                             noaa_stations[ , c("name", "short_id", "latitude", "longitude")],
                             by = c("site" = "short_id"))
 
+aust_not_noaa <- filter(bom_stations, !(site %in% noaa_stations$short_id))
+
+
+# Try pulling weather data for some of the stations from the Australian site that
+# are not listed by NOAA
+ex_aust_not_noaa <- paste0("GHCND:ASN",
+                           sprintf("%08s",
+                                   as.character(sample(aust_not_noaa$site, 200))))
+for(i in 1:length(ex_aust_not_noaa)){
+  ex <- ncdc_stations(stationid = ex_aust_not_noaa[i])$data
+  if(i == 1){
+    extra_stations <- ex
+  } else {
+    extra_stations <- rbind(extra_stations, ex)
+  }
+}
+nrow(extra_stations) / length(ex_aust_not_noaa) # Percent of stations in NOAA
+
+ghcnd(stationid = ex_aust_not_noaa[1])
