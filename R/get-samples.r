@@ -28,11 +28,11 @@ read_bom <- function(state="IDD60701", loc="94103") {
 
 S_read_bom <- safely(read_bom)
 
-walk(names(station_list), function(x) {
+map(names(station_list), function(x) {
 
   cat(sprintf("%s\n", x))
 
-  walk(station_list[[x]], function(y) {
+  map(station_list[[x]], function(y) {
     cat(sprintf("  +-- %s", y))
     bom <- S_read_bom(x, y)
     if (!is.null(bom$result)) {
@@ -43,7 +43,13 @@ walk(names(station_list), function(x) {
     cat("\n")
   })
 
-})
+}) -> wx
+
+S_read <- safely(read.csv)
+
+dats <- map(list.files("samples/", full.names=TRUE), S_read)
+cols <- map(dats, function(x) { names(x$result)})
+lengths(cols)
 
 
 
