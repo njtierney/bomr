@@ -2,6 +2,9 @@
 
 library(rnoaa)
 library(dplyr)
+library(readr)
+library(lubridate)
+library(dplyr)
 options("noaakey" = steve)
 
 # Find out the location ID for Australia
@@ -28,20 +31,32 @@ ex_2 <- ncdc_stations(limit = ex_stations$meta$totalCount - 1000,
                       locationid = "FIPS:AS",
                       offset = 1001)
 all_aust_stations <- rbind(ex_stations$data, ex_2$data) %>%
-  mutate(short_id = substring(id, 13, 17))
+  mutate(short_id = as.numeric(substring(id, 13, 17)))
 
+# save(all_aust_stations, file = "data/all_aust_stations.RData")
 
-# See if the example stations are in there
-list(
-  IDD60701 = c("94103", "95100", "94102", "95101", "95214", "95111", "94121", "94116", "99510", "95122", "94120", "99501", "94127", "94122", "94119", "94134", "94108", "94135", "94139", "95142", "94140", "95146", "94147", "94150", "94153", "94248"),
-  IDN60701 = c("94592", "94599", "94596", "94598", "94589", "95729", "94790", "94786", "95784", "94776", "94774", "95767", "95770", "95768", "95766", "94769", "94767", "94780", "95756", "95752", "94749", "95745", "95748", "95749", "95940", "94938", "95937", "94937", "95935", "94939", "95929", "94934", "94933", "94995", "95995", "94996"),
-  IDQ60701 = c("94254", "94257", "94268", "94170", "94174", "94182", "94186", "94188", "95283", "94285", "94287", "94284", "94291", "95292", "94292", "94292", "94295", "94294", "94297", "95296", "94383", "94383", "94368", "94365", "94371", "94367", "99367", "94372", "94379", "95369", "95288", "94289", "94299", "94293", "94290", "94298", "94371", "94379", "94394", "94393", "95369", "94370", "94373", "95298", "94378", "94380", "94386", "94388", "94384", "94390", "94387", "95565", "94564", "94584", "94584", "94570", "94569", "94594", "94594", "94581", "94590", "94591", "94578", "94561", "95591", "94593", "94580", "94592"),
-  IDS60701 = c("94647", "94651", "94653", "95653", "94656", "94658", "95661", "95664", "95666", "99749", "94666", "95659", "94807", "94809", "95675", "94672", "94808", "94804", "95806", "95805", "95807", "94822", "95811", "94677", "94813", "94812", "95816", "94826", "94828", "95826"),
-  IDT60701 = c("94850", "94950", "95954", "94953", "95957", "94958", "95963", "95960", "95964", "95973", "94980", "94949", "95985", "94983", "95981", "95989", "94987", "94981", "95984", "95987", "95988", "94951", "95986", "94970", "94975", "94988", "94967", "95967", "94961", "94962", "95961", "94974", "94956", "94804", "95805", "94842", "94893", "94933"),
-  IDV60701 = c("94828", "95826", "94826", "94830", "94837", "94842", "94846", "94857", "94847", "94854", "94865", "95936", "95872", "94853", "95864", "94870", "94871", "94898", "94892", "94883", "95881", "94911", "94893", "94949", "95890", "94907", "94912", "95904", "55039", "95918", "94932", "94935", "94933", "94812", "95816", "94850", "94950", "95954", "94953", "95957", "94958", "95960", "95964", "95973", "94980"),
-  IDW60701 = c("95214", "94100", "95101", "94102", "95100", "94103", "94210", "95205", "94201", "99206", "94203", "94207", "95202", "94202", "94200", "94311", "94310", "94312", "94308", "94307", "95307", "94306", "95304", "95305", "94302", "94300", "95402", "94402", "94401", "94401", "94405", "94403", "95600", "95600", "95606", "94607", "95605", "94614", "95620", "94602", "95607", "94605", "94604", "95602", "94600", "94600", "94601", "94640", "95647", "95647", "94802", "95635", "95648", "94638", "94645", "94644", "94647", "96995", "96996")
-) -> station_list
+# Compare the stations available for NOAA versus BOM
+bom_stations <- read_fwf("tempdata/stations.txt",
+                         fwf_widths(c(7, 6, 41, 8, 8, 9, 10, 15, 4, 11,
+                                      9, 7)), skip = 4, na = "..")
+to_cut <- which(is.na(bom_stations$X1))[1]
+bom_stations <- bom_stations[1:(to_cut - 1), ]
+colnames(bom_stations) <- c("site", "dist", "site_name", "start",
+                            "end", "lat", "lon", "source", "sta",
+                            "height", "bar_ht", "wmo")
 
+noaa_stations <- all_aust_stations %>%
+  mutate(mindate = ymd(mindate),
+         maxdate = ymd(maxdate),
+         start = year(mindate),
+         end = year(maxdate))
+
+bom_wmo_stations <- filter(bom_stations, !is.na(wmo))
+
+nrow(bom_wmo_stations)
+## 874 of the bom_stations actually have values for the WMO station identifier
+
+<<<<<<< HEAD
 stations_to_check <- unlist(station_list)
 length(stations_to_check[stations_to_check %in% all_aust_stations$short_id])
 
@@ -50,3 +65,18 @@ length(stations_to_check[stations_to_check %in% all_aust_stations$short_id])
 bom_stations <- read.fwf("tempdata/stations.txt", skip = 4,
                          widths = c(7, 6, 41, 8, 8, 9, 10, 15, 4, 11,
                                     9, 7), n = 5, na.strings = "..")
+=======
+# How many of the stations from BOM are in the NOAA station list?
+both_stations <- inner_join(bom_wmo_stations[ , c("site_name", "wmo", "lat", "lon")],
+                            noaa_stations[ , c("name", "short_id", "latitude", "longitude")],
+                            by = c("wmo" = "short_id"))
+# There are only 10 stations where the `short_id` from rnoaa and the `wmo` from BOM
+# match up. However, some of these are the same stations (true matches), while some
+# clearly are not. It's a bit wacky why these don't match...
+
+# Maybe the site number from BOM is what agrees with rnoaa?
+bom_stations <- bom_stations %>% mutate(site = as.numeric(site))
+both_stations <- inner_join(bom_stations[ , c("site_name", "site", "lat", "lon")],
+                            noaa_stations[ , c("name", "short_id", "latitude", "longitude")],
+                            by = c("site" = "short_id"))
+>>>>>>> ff8c6439f30cf6a269e96b720bc4de28e1f7aff6
