@@ -20119,6 +20119,6 @@ Bureau of Meteorology product IDCJMC0014.                                       
 
 20114 stations
 
-(c) Copyright Commonwealth of Australia 2016, Bureau of Meteorology (ABN 92 637 533 532) 
+(c) Copyright Commonwealth of Australia 2016, Bureau of Meteorology (ABN 92 637 533 532)
 Please note Copyright, Disclaimer and Privacy Notice, accessible at <http://www.bom.gov.au/other/copyright.shtml>
 
