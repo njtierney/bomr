@@ -60,3 +60,6 @@ nrow(bom_wmo_stations)
 both_stations <- inner_join(bom_wmo_stations[ , c("site_name", "wmo", "lat", "lon")],
                             noaa_stations[ , c("name", "short_id", "latitude", "longitude")],
                             by = c("wmo" = "short_id"))
+# There are only 10 stations where the `short_id` from rnoaa and the `wmo` from BOM
+# match up. However, some of these are the same stations (true matches), while some
+# clearly are not. It's a bit wacky why these don't match...
