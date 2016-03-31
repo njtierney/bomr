@@ -29,6 +29,21 @@ gg <- gg + coord_map()
 gg <- gg + ggthemes::theme_map()
 gg
 
+load("data/all_aust_stations.RData")
+noaa <- all_aust_stations %>%
+  mutate(maxdate = ymd(maxdate))
+current_noaa <- filter(noaa, year(maxdate) == 2016) # 795 current stations
+gg <- ggplot()
+gg <- gg + geom_map(data=aus_map, map=aus_map,
+                    aes(x=long, y=lat, map_id=region),
+                    color="#2b2b2b", size=0.15, fill=NA)
+gg <- gg + geom_point(data=current_noaa,
+                      aes(x=longitude, y=latitude), color="red",
+                      size=0.3, alpha=0.5)
+gg <- gg + coord_map()
+gg <- gg + ggthemes::theme_map()
+gg
+
 head(bom_stations)
 
 dat <- mutate(arrange(summarize(group_by(active, start, end), total=n()), desc(total)), end=ifelse(is.na(end), 2016, end))
