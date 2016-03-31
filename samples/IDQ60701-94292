@@ -1,0 +1,4 @@
+"sort_order","wmo","name","history_product","local_date_time","local_date_time_full","aifstime_utc","lat","lon","cloud","cloud_base_m","cloud_oktas","cloud_type_id","cloud_type","gust_kt","air_temp","press","press_tend","rain_trace","sea_state","swell_dir_worded","swell_height","swell_period","vis_km","weather","wind_dir","wind_spd_kt"
+0,94292,"Cardwell","IDQ60701","31/09:00am","20160331090000","20160330230000",-18.3,146,"Mostly clear",600,1,31,"-",NA,28,1014.9,"-","0.0","&lt;0.1","-",NA,NA,"50","Fine","E",3
+1,94292,"Cardwell","IDQ60701","30/09:00am","20160330090000","20160329230000",-18.3,146,"Mostly clear",1000,2,31,"-",NA,28.2,1015.4,"-","0.0","&lt;0.1","-",NA,NA,"50","Fine","E",5
+2,94292,"Cardwell","IDQ60701","29/09:00am","20160329090000","20160328230000",-18.3,146,"Partly cloudy",600,4,38,"-",NA,28,1016.7,"-","0.0","Calm","-",NA,NA,"50","Fine","CALM",0

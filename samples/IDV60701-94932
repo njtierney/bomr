@@ -1,0 +1,7 @@
+"sort_order","wmo","name","history_product","local_date_time","local_date_time_full","aifstime_utc","lat","lon","cloud","cloud_base_m","cloud_oktas","cloud_type_id","cloud_type","gust_kt","air_temp","press","press_tend","rain_trace","sea_state","swell_dir_worded","swell_height","swell_period","vis_km","weather","wind_dir","wind_spd_kt"
+0,94932,"Point Hicks","IDV60701","31/09:00am","20160331090000","20160330220000",-37.8,149.3,"Partly cloudy",600,5,34,"-",NA,14.8,NA,"-","38.0","1","S",1,8,"30","Distant precip.","W",16
+1,94932,"Point Hicks","IDV60701","31/06:00am","20160331060000","20160330190000",-37.8,149.3,"Mostly cloudy",600,7,34,"-",NA,14.1,NA,"-","-","2","S",1.5,7,"30","Fine","W",24
+2,94932,"Point Hicks","IDV60701","30/09:00am","20160330090000","20160329220000",-37.8,149.3,"Cloudy",NA,8,30,"-",NA,14.6,NA,"-","19.0","1","S",1,7,"10","Rain","SW",18
+3,94932,"Point Hicks","IDV60701","30/06:00am","20160330060000","20160329190000",-37.8,149.3,"Cloudy",NA,8,30,"-",NA,14.8,NA,"-","-","1","S",0.5,8,"10","Rain","W",14
+4,94932,"Point Hicks","IDV60701","29/09:00am","20160329090000","20160328220000",-37.8,149.3,"Cloudy",1000,8,35,"-",NA,15,NA,"-","0.0","&lt;0.5","S",0.5,9,"30","Fine","NW",5
+5,94932,"Point Hicks","IDV60701","29/06:00am","20160329060000","20160328190000",-37.8,149.3,"Cloudy",1000,8,35,"-",NA,14.9,NA,"-","-","&lt;0.5","S",0.5,9,"30","Fine","NW",7

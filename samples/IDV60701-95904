@@ -1,0 +1,7 @@
+"sort_order","wmo","name","history_product","local_date_time","local_date_time_full","aifstime_utc","lat","lon","cloud","cloud_base_m","cloud_oktas","cloud_type_id","cloud_type","gust_kt","air_temp","press","press_tend","rain_trace","sea_state","swell_dir_worded","swell_height","swell_period","vis_km","weather","wind_dir","wind_spd_kt"
+0,95904,"Lakes Entrance","IDV60701","31/09:00am","20160331090000","20160330220000",-37.9,148,"Clear",2500,0,NA,"-",NA,13.6,NA,"-","13.0","-","-",NA,NA,"60","Fine","NW",7
+1,95904,"Lakes Entrance","IDV60701","31/06:00am","20160331060000","20160330190000",-37.9,148,"-",NA,NA,NA,"-",NA,13.4,NA,"-","-","-","-",NA,NA,"60","Fine","W",5
+2,95904,"Lakes Entrance","IDV60701","30/09:00am","20160330090000","20160329220000",-37.9,148,"Cloudy",NA,8,NA,"-",NA,13.7,NA,"-","10.0","-","-",NA,NA,"1","Rain","W",12
+3,95904,"Lakes Entrance","IDV60701","30/06:00am","20160330060000","20160329190000",-37.9,148,"Cloudy",1000,8,35,"-",NA,14,NA,"-","-","-","-",NA,NA,"50","Fine","W",8
+4,95904,"Lakes Entrance","IDV60701","29/09:00am","20160329090000","20160328220000",-37.9,148,"Cloudy",NA,8,NA,"-",NA,14,NA,"-","0.6","-","-",NA,NA,"60","Fine","CALM",0
+5,95904,"Lakes Entrance","IDV60701","29/06:00am","20160329060000","20160328190000",-37.9,148,"-",NA,NA,NA,"-",NA,15.1,NA,"-","-","-","-",NA,NA,"60","Fine","SW",5

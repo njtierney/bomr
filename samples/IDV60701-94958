@@ -1,0 +1,8 @@
+"sort_order","wmo","name","history_product","local_date_time","local_date_time_full","aifstime_utc","lat","lon","cloud","cloud_base_m","cloud_oktas","cloud_type_id","cloud_type","gust_kt","air_temp","press","press_tend","rain_trace","sea_state","swell_dir_worded","swell_height","swell_period","vis_km","weather","wind_dir","wind_spd_kt"
+0,94958,"Burnie","IDV60701","31/03:00pm","20160331150000","20160331040000",-41.1,145.9,"Mostly cloudy",NA,7,NA,"-",NA,17.8,NA,"-","0.0","&lt;0.1","NW",0.1,6,"20","Fine","NNW",2
+1,94958,"Burnie","IDV60701","31/09:00am","20160331090000","20160330220000",-41.1,145.9,"Partly cloudy",NA,3,NA,"-",NA,13.1,NA,"-","0.0","&lt;0.1","NW",0.1,8,"40","Fine","W",2
+2,94958,"Burnie","IDV60701","30/04:00pm","20160330160000","20160330050000",-41.1,145.9,"Mostly cloudy",NA,6,NA,"-",NA,19.8,NA,"-","0.0","&lt;0.1","NW",0.1,6,"40","Fine","NNW",5
+3,94958,"Burnie","IDV60701","30/03:00pm","20160330150000","20160330040000",-41.1,145.9,"Mostly cloudy",NA,6,NA,"-",NA,19.8,NA,"-","0.0","&lt;0.1","-",1,NA,"40","Fine","NNW",5
+4,94958,"Burnie","IDV60701","30/10:00am","20160330100000","20160329230000",-41.1,145.9,"Mostly cloudy",NA,7,NA,"-",NA,14.8,NA,"-","0.0","Calm","NS",0,0,"40","Fine","SW",2
+5,94958,"Burnie","IDV60701","29/04:00pm","20160329160000","20160329050000",-41.1,145.9,"Mostly cloudy",NA,7,NA,"-",NA,17.2,NA,"-","0.0","&lt;0.1","NE",0.1,10,"40","Fine","NNE",9
+6,94958,"Burnie","IDV60701","29/10:00am","20160329100000","20160328230000",-41.1,145.9,"Mostly cloudy",NA,6,NA,"-",NA,9.8,NA,"-","0.0","Calm","NS",0,0,"40","Fine","SSW",2

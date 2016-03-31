@@ -1,0 +1,4 @@
+"sort_order","wmo","name","history_product","local_date_time","local_date_time_full","aifstime_utc","lat","lon","cloud","cloud_base_m","cloud_oktas","cloud_type_id","cloud_type","gust_kt","air_temp","press","press_tend","rain_trace","sea_state","swell_dir_worded","swell_height","swell_period","vis_km","weather","wind_dir","wind_spd_kt"
+0,94384,"Seventeen Seventy","IDQ60701","31/09:00am","20160331090000","20160330230000",-24.2,151.9,"Mostly cloudy",600,6,32,"Towering Cumulus",NA,26.3,1016.4,"-","0.0","&lt;0.5","E",0.5,5,"20","Fine","SSE",5
+1,94384,"Seventeen Seventy","IDQ60701","30/09:00am","20160330090000","20160329230000",-24.2,151.9,"Partly cloudy",600,3,32,"Towering Cumulus",NA,26,1017,"-","0.0","&lt;0.5","E",0.5,6,"20","Fine","SSW",7
+2,94384,"Seventeen Seventy","IDQ60701","29/09:00am","20160329090000","20160328230000",-24.2,151.9,"Mostly clear",600,2,38,"-",NA,26.1,1017.9,"-","0.0","&lt;0.5","E",0.5,6,"20","Fine","SE",9

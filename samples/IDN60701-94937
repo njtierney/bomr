@@ -1,0 +1,7 @@
+"sort_order","wmo","name","history_product","local_date_time","local_date_time_full","aifstime_utc","lat","lon","cloud","cloud_base_m","cloud_oktas","cloud_type_id","cloud_type","gust_kt","air_temp","press","press_tend","rain_trace","sea_state","swell_dir_worded","swell_height","swell_period","vis_km","weather","wind_dir","wind_spd_kt"
+0,94937,"Moruya Heads","IDN60701","31/03:00pm","20160331150000","20160331040000",-35.9,150.2,"Mostly clear",1000,1,32,"Towering Cumulus",NA,22.6,1015.8,"-","0.0","1","S",1.5,8,"30","Fine","ENE",6
+1,94937,"Moruya Heads","IDN60701","31/09:00am","20160331090000","20160330220000",-35.9,150.2,"Clear",2500,0,NA,"-",NA,16.9,1017.3,"-","0.6","&lt;0.5","S",1.5,8,"40","Fine","CALM",0
+2,94937,"Moruya Heads","IDN60701","30/03:00pm","20160330150000","20160330040000",-35.9,150.2,"Cloudy",1000,8,32,"Towering Cumulus",NA,21.5,1011.7,"-","0.0","1","E",1.5,8,"30","Fine","E",4
+3,94937,"Moruya Heads","IDN60701","30/09:00am","20160330090000","20160329220000",-35.9,150.2,"Mostly cloudy",NA,7,30,"-",NA,17.5,1014.8,"-","6.0","&lt;0.5","E",1.5,8,"30","Fine","CALM",0
+4,94937,"Moruya Heads","IDN60701","29/03:00pm","20160329150000","20160329040000",-35.9,150.2,"Cloudy",NA,8,30,"-",NA,19.8,1017.8,"-","0.0","1","E",1.5,11,"20","Fine","SSW",6
+5,94937,"Moruya Heads","IDN60701","29/09:00am","20160329090000","20160328220000",-35.9,150.2,"Cloudy",NA,8,30,"-",NA,16.6,1019.4,"-","0.0","1","E",1.5,11,"20","Fine","SW",6

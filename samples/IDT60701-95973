@@ -1,0 +1,7 @@
+"sort_order","wmo","name","history_product","local_date_time","local_date_time_full","aifstime_utc","lat","lon","cloud","cloud_base_m","cloud_oktas","cloud_type_id","cloud_type","gust_kt","air_temp","press","press_tend","rain_trace","sea_state","swell_dir_worded","swell_height","swell_period","vis_km","weather","wind_dir","wind_spd_kt"
+0,95973,"Bridport","IDT60701","31/03:00pm","20160331150000","20160331040000",-41,147.4,"Partly cloudy",NA,4,NA,"-",NA,20.5,NA,"-","0.0","-","-",NA,NA,"40","Fine","NW",5
+1,95973,"Bridport","IDT60701","31/09:00am","20160331090000","20160330220000",-41,147.4,"Mostly clear",NA,1,NA,"-",NA,14.2,NA,"-","0.0","-","-",NA,NA,"50","Fine","W",2
+2,95973,"Bridport","IDT60701","30/03:00pm","20160330150000","20160330040000",-41,147.4,"Mostly cloudy",NA,6,NA,"-",NA,19.5,NA,"-","0.0","-","-",NA,NA,"35","Fine","CALM",0
+3,95973,"Bridport","IDT60701","30/09:00am","20160330090000","20160329220000",-41,147.4,"Cloudy",NA,8,NA,"-",NA,16,NA,"-","0.0","-","-",NA,NA,"30","Fine","SE",5
+4,95973,"Bridport","IDT60701","29/03:00pm","20160329150000","20160329040000",-41,147.4,"Partly cloudy",NA,5,NA,"-",NA,19.9,NA,"-","0.0","-","-",NA,NA,"50","Fine","NE",9
+5,95973,"Bridport","IDT60701","29/09:00am","20160329090000","20160328220000",-41,147.4,"Mostly clear",NA,2,NA,"-",NA,14.2,NA,"-","0.0","-","-",NA,NA,"50","Fine","SE",7

@@ -1,0 +1,4 @@
+"sort_order","wmo","name","history_product","local_date_time","local_date_time_full","aifstime_utc","lat","lon","cloud","cloud_base_m","cloud_oktas","cloud_type_id","cloud_type","gust_kt","air_temp","press","press_tend","rain_trace","sea_state","swell_dir_worded","swell_height","swell_period","vis_km","weather","wind_dir","wind_spd_kt"
+0,94961,"Dover","IDT60701","31/09:00am","20160331090000","20160330220000",-43.3,147,"Partly cloudy",600,5,35,"-",NA,11.8,NA,"-","0.0","-","-",NA,NA,"35","Fine","CALM",0
+1,94961,"Dover","IDT60701","30/09:00am","20160330090000","20160329220000",-43.3,147,"Mostly clear",100,1,36,"-",NA,7.3,NA,"-","Trace","-","-",NA,NA,"35","Fine","W",2
+2,94961,"Dover","IDT60701","29/09:00am","20160329090000","20160328220000",-43.3,147,"Mostly cloudy",300,6,35,"-",NA,9,NA,"-","0.2","-","-",NA,NA,"30","Fine","CALM",0
