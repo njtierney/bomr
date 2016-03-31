@@ -56,16 +56,6 @@ bom_wmo_stations <- filter(bom_stations, !is.na(wmo))
 nrow(bom_wmo_stations)
 ## 874 of the bom_stations actually have values for the WMO station identifier
 
-<<<<<<< HEAD
-stations_to_check <- unlist(station_list)
-length(stations_to_check[stations_to_check %in% all_aust_stations$short_id])
-
-# save(all_aust_stations, file = "data/all_aust_stations.RData")
-
-bom_stations <- read.fwf("tempdata/stations.txt", skip = 4,
-                         widths = c(7, 6, 41, 8, 8, 9, 10, 15, 4, 11,
-                                    9, 7), n = 5, na.strings = "..")
-=======
 # How many of the stations from BOM are in the NOAA station list?
 both_stations <- inner_join(bom_wmo_stations[ , c("site_name", "wmo", "lat", "lon")],
                             noaa_stations[ , c("name", "short_id", "latitude", "longitude")],
@@ -79,4 +69,4 @@ bom_stations <- bom_stations %>% mutate(site = as.numeric(site))
 both_stations <- inner_join(bom_stations[ , c("site_name", "site", "lat", "lon")],
                             noaa_stations[ , c("name", "short_id", "latitude", "longitude")],
                             by = c("site" = "short_id"))
->>>>>>> ff8c6439f30cf6a269e96b720bc4de28e1f7aff6
+
