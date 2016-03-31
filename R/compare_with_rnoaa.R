@@ -56,16 +56,6 @@ bom_wmo_stations <- filter(bom_stations, !is.na(wmo))
 nrow(bom_wmo_stations)
 ## 874 of the bom_stations actually have values for the WMO station identifier
 
-<<<<<<< HEAD
-stations_to_check <- unlist(station_list)
-length(stations_to_check[stations_to_check %in% all_aust_stations$short_id])
-
-# save(all_aust_stations, file = "data/all_aust_stations.RData")
-
-bom_stations <- read.fwf("tempdata/stations.txt", skip = 4,
-                         widths = c(7, 6, 41, 8, 8, 9, 10, 15, 4, 11,
-                                    9, 7), n = 5, na.strings = "..")
-=======
 # How many of the stations from BOM are in the NOAA station list?
 both_stations <- inner_join(bom_wmo_stations[ , c("site_name", "wmo", "lat", "lon")],
                             noaa_stations[ , c("name", "short_id", "latitude", "longitude")],
@@ -79,4 +69,29 @@ bom_stations <- bom_stations %>% mutate(site = as.numeric(site))
 both_stations <- inner_join(bom_stations[ , c("site_name", "site", "lat", "lon")],
                             noaa_stations[ , c("name", "short_id", "latitude", "longitude")],
                             by = c("site" = "short_id"))
->>>>>>> ff8c6439f30cf6a269e96b720bc4de28e1f7aff6
+
+aust_not_noaa <- filter(bom_stations, !(site %in% noaa_stations$short_id))
+
+
+# Try pulling weather data for some of the stations from the Australian site that
+# are not listed by NOAA
+ex_aust_not_noaa <- paste0("GHCND:ASN",
+                           sprintf("%08s",
+                                   as.character(sample(aust_not_noaa$site, 200))))
+missing_stations <- 0
+for(i in 1:length(ex_aust_not_noaa)){
+  ex <- ncdc_stations(stationid = ex_aust_not_noaa[i])$data
+  if(i == 1){
+    extra_stations <- ex
+  }else if(nrow(ex) == 1 & ncol(ex) == 9) {
+    extra_stations <- rbind(extra_stations, ex)
+  }else if(nrow(ex) == 0){
+    missing_stations <- missing_stations + 1
+  }
+}
+missing_stations
+nrow(extra_stations)
+missing_stations / length(ex_aust_not_noaa)
+# It looks like around 15-20% of these stations aren't in the NOAA system, but
+# the rest are (based on a sample of 200 of the stations that we pulled from the
+# Australia monitor file but that didn't show up from the NOAA API call).
