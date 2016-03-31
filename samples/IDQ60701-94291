@@ -1,0 +1,7 @@
+"sort_order","wmo","name","history_product","local_date_time","local_date_time_full","aifstime_utc","lat","lon","cloud","cloud_base_m","cloud_oktas","cloud_type_id","cloud_type","gust_kt","air_temp","press","press_tend","rain_trace","sea_state","swell_dir_worded","swell_height","swell_period","vis_km","weather","wind_dir","wind_spd_kt"
+0,94291,"Innisfail","IDQ60701","31/09:00am","20160331090000","20160330230000",-17.5,146,"Mostly clear",300,2,32,"Towering Cumulus",NA,26.9,NA,"-","0.0","-","-",NA,NA,"50","Fine","SW",2
+1,94291,"Innisfail","IDQ60701","31/06:00am","20160331060000","20160330200000",-17.5,146,"Mostly clear",0,2,32,"Towering Cumulus",NA,22.6,NA,"-","-","-","-",NA,NA,"10","Fog patches","WSW",2
+2,94291,"Innisfail","IDQ60701","30/09:00am","20160330090000","20160329230000",-17.5,146,"Mostly clear",300,1,32,"Towering Cumulus",NA,27.3,NA,"-","0.0","-","-",NA,NA,"50","Fine","SW",2
+3,94291,"Innisfail","IDQ60701","30/06:00am","20160330060000","20160329200000",-17.5,146,"Mostly clear",0,1,32,"Towering Cumulus",NA,22.8,NA,"-","-","-","-",NA,NA,"15","Fog patches","S",2
+4,94291,"Innisfail","IDQ60701","29/09:00am","20160329090000","20160328230000",-17.5,146,"Partly cloudy",300,3,32,"Towering Cumulus",NA,27.6,NA,"-","0.0","-","-",NA,NA,"50","Fine","W",2
+5,94291,"Innisfail","IDQ60701","29/06:00am","20160329060000","20160328200000",-17.5,146,"Mostly clear",0,2,32,"Towering Cumulus",NA,23,NA,"-","-","-","-",NA,NA,"20","Fog patches","S",2

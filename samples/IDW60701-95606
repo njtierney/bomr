@@ -1,0 +1,4 @@
+"sort_order","wmo","name","history_product","local_date_time","local_date_time_full","aifstime_utc","lat","lon","cloud","cloud_base_m","cloud_oktas","cloud_type_id","cloud_type","gust_kt","air_temp","press","press_tend","rain_trace","sea_state","swell_dir_worded","swell_height","swell_period","vis_km","weather","wind_dir","wind_spd_kt"
+0,95606,"Lancelin","IDW60701","31/09:00am","20160331090000","20160331010000",-31,115.3,"Partly cloudy",NA,3,NA,"-",NA,21.8,1016.3,"-","0.0","-","-",NA,NA,"20","Fine","SW",2
+1,95606,"Lancelin","IDW60701","30/09:00am","20160330090000","20160330010000",-31,115.3,"Mostly clear",NA,1,NA,"-",NA,23.6,1022.3,"-","0.0","-","-",NA,NA,"20","Fine","S",5
+2,95606,"Lancelin","IDW60701","29/09:00am","20160329090000","20160329010000",-31,115.3,"Clear",2500,0,NA,"-",NA,21.3,1024.7,"-","0.0","-","-",NA,NA,"25","Fine","S",4

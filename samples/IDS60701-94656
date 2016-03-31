@@ -1,0 +1,4 @@
+"sort_order","wmo","name","history_product","local_date_time","local_date_time_full","aifstime_utc","lat","lon","cloud","cloud_base_m","cloud_oktas","cloud_type_id","cloud_type","gust_kt","air_temp","press","press_tend","rain_trace","sea_state","swell_dir_worded","swell_height","swell_period","vis_km","weather","wind_dir","wind_spd_kt"
+0,94656,"Elliston","IDS60701","31/09:00am","20160331090000","20160330223000",-33.7,134.9,"Partly cloudy",NA,3,30,"-",NA,11.9,1022.2,"F","0.0","-","-",NA,NA,"45","Fine","NNE",2
+1,94656,"Elliston","IDS60701","30/09:00am","20160330090000","20160329223000",-33.7,134.9,"Partly cloudy",1500,4,33,"-",NA,10.3,1026.4,"R","0.0","-","-",NA,NA,"45","Fine","ENE",1
+2,94656,"Elliston","IDS60701","29/09:00am","20160329090000","20160328223000",-33.7,134.9,"Mostly clear",1000,2,33,"-",NA,16.3,1023.9,"R","0.0","-","-",NA,NA,"35","Fine","SE",10

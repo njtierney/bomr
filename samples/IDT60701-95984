@@ -1,0 +1,4 @@
+"sort_order","wmo","name","history_product","local_date_time","local_date_time_full","aifstime_utc","lat","lon","cloud","cloud_base_m","cloud_oktas","cloud_type_id","cloud_type","gust_kt","air_temp","press","press_tend","rain_trace","sea_state","swell_dir_worded","swell_height","swell_period","vis_km","weather","wind_dir","wind_spd_kt"
+0,95984,"Orford","IDT60701","31/09:00am","20160331090000","20160330220000",-42.6,147.9,"Mostly clear",NA,1,NA,"-",NA,15,NA,"-","0.0","-","-",NA,NA,"40","Fine","SE",5
+1,95984,"Orford","IDT60701","30/09:00am","20160330090000","20160329220000",-42.6,147.9,"Cloudy",NA,8,NA,"-",NA,15.1,NA,"-","0.0","-","-",NA,NA,"40","Fine","SW",5
+2,95984,"Orford","IDT60701","29/09:00am","20160329090000","20160328220000",-42.6,147.9,"Partly cloudy",NA,3,NA,"-",NA,12,NA,"-","0.0","-","-",NA,NA,"40","Fine","W",5

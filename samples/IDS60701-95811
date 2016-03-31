@@ -1,0 +1,4 @@
+"sort_order","wmo","name","history_product","local_date_time","local_date_time_full","aifstime_utc","lat","lon","cloud","cloud_base_m","cloud_oktas","cloud_type_id","cloud_type","gust_kt","air_temp","press","press_tend","rain_trace","sea_state","swell_dir_worded","swell_height","swell_period","vis_km","weather","wind_dir","wind_spd_kt"
+0,95811,"Victor Harbor","IDS60701","31/09:00am","20160331090000","20160330223000",-35.6,138.6,"Mostly clear",NA,2,30,"-",NA,12.9,NA,"-","Trace","-","-",NA,NA,"40","Fine","NNE",1
+1,95811,"Victor Harbor","IDS60701","30/09:00am","20160330090000","20160329223000",-35.6,138.6,"Cloudy",600,8,38,"-",NA,14.3,NA,"-","0.0","-","-",NA,NA,"35","Fine","CALM",0
+2,95811,"Victor Harbor","IDS60701","29/09:00am","20160329090000","20160328223000",-35.6,138.6,"Mostly cloudy",600,7,32,"Towering Cumulus",NA,15.2,NA,"-","0.0","-","-",NA,NA,"28","Fine","ENE",3

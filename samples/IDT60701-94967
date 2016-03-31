@@ -1,0 +1,7 @@
+"sort_order","wmo","name","history_product","local_date_time","local_date_time_full","aifstime_utc","lat","lon","cloud","cloud_base_m","cloud_oktas","cloud_type_id","cloud_type","gust_kt","air_temp","press","press_tend","rain_trace","sea_state","swell_dir_worded","swell_height","swell_period","vis_km","weather","wind_dir","wind_spd_kt"
+0,94967,"Cape Bruny","IDT60701","31/03:00pm","20160331150000","20160331040000",-43.5,147.1,"Mostly cloudy",NA,6,NA,"-",NA,20.6,NA,"-","0.0","&lt;0.1","SW",1,12,"40","Fine","W",4
+1,94967,"Cape Bruny","IDT60701","31/09:00am","20160331090000","20160330220000",-43.5,147.1,"Partly cloudy",NA,4,NA,"-",NA,14.4,NA,"-","0.0","&lt;0.5","SW",1.5,12,"30","Fine","NNE",6
+2,94967,"Cape Bruny","IDT60701","30/03:00pm","20160330150000","20160330040000",-43.5,147.1,"Partly cloudy",NA,3,NA,"-",NA,18,NA,"-","0.0","&lt;0.1","SW",1,11,"40","Fine","W",2
+3,94967,"Cape Bruny","IDT60701","30/09:00am","20160330090000","20160329220000",-43.5,147.1,"Mostly clear",NA,2,NA,"-",NA,12.2,NA,"-","0.0","&lt;0.1","SW",1.5,13,"40","Fine","N",2
+4,94967,"Cape Bruny","IDT60701","29/03:00pm","20160329150000","20160329040000",-43.5,147.1,"Mostly cloudy",NA,7,NA,"-",NA,15.1,NA,"-","0.0","&lt;0.1","SW",2,10,"40","Fine","CALM",0
+5,94967,"Cape Bruny","IDT60701","29/09:00am","20160329090000","20160328220000",-43.5,147.1,"Mostly cloudy",NA,7,NA,"-",NA,12.5,NA,"-","0.0","&lt;0.5","SW",1.5,12,"25","Fine","WNW",2
