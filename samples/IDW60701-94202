@@ -1,0 +1,4 @@
+"sort_order","wmo","name","history_product","local_date_time","local_date_time_full","aifstime_utc","lat","lon","cloud","cloud_base_m","cloud_oktas","cloud_type_id","cloud_type","gust_kt","air_temp","press","press_tend","rain_trace","sea_state","swell_dir_worded","swell_height","swell_period","vis_km","weather","wind_dir","wind_spd_kt"
+0,94202,"Bidyadanga","IDW60701","31/09:00am","20160331090000","20160331010000",-18.7,121.8,"Mostly clear",NA,2,NA,"-",NA,39.1,1012.7,"-","0.0","-","-",NA,NA,"50","Fine","ESE",1
+1,94202,"Bidyadanga","IDW60701","30/09:00am","20160330090000","20160330010000",-18.7,121.8,"Clear",2500,0,NA,"-",NA,35.9,1014.5,"-","0.0","-","-",NA,NA,"50","Fine","ESE",1
+2,94202,"Bidyadanga","IDW60701","29/09:00am","20160329090000","20160329010000",-18.7,121.8,"Clear",2500,0,NA,"-",NA,33.6,1015.2,"-","0.0","-","-",NA,NA,"50","Fine","SSW",1

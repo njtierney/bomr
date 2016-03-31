@@ -1,0 +1,3 @@
+"sort_order","wmo","name","history_product","local_date_time","local_date_time_full","aifstime_utc","lat","lon","cloud","cloud_base_m","cloud_oktas","cloud_type_id","cloud_type","gust_kt","air_temp","press","press_tend","rain_trace","sea_state","swell_dir_worded","swell_height","swell_period","vis_km","weather","wind_dir","wind_spd_kt"
+0,94593,"Point Lookout","IDQ60701","30/09:00am","20160330090000","20160329230000",-27.4,153.5,"Mostly clear",600,1,31,"-",NA,27,NA,"-","-","&lt;0.5","E",1.2,8,"28","Haze","NW",5
+1,94593,"Point Lookout","IDQ60701","29/09:00am","20160329090000","20160328230000",-27.4,153.5,"Mostly clear",300,1,31,"-",NA,27.2,NA,"-","-","&lt;0.1","E",1.5,7,"22","Haze","SE",2

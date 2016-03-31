@@ -1,0 +1,7 @@
+"sort_order","wmo","name","history_product","local_date_time","local_date_time_full","aifstime_utc","lat","lon","cloud","cloud_base_m","cloud_oktas","cloud_type_id","cloud_type","gust_kt","air_temp","press","press_tend","rain_trace","sea_state","swell_dir_worded","swell_height","swell_period","vis_km","weather","wind_dir","wind_spd_kt"
+0,94645,"Eyre","IDW60701","31/09:00am","20160331090000","20160331010000",-32.2,126.3,"Mostly cloudy",NA,6,30,"-",NA,23.9,1018.6,"-","0.0","-","-",NA,NA,"30","Fine","NE",8
+1,94645,"Eyre","IDW60701","31/06:00am","20160331060000","20160330220000",-32.2,126.3,"Mostly cloudy",NA,6,30,"-",NA,15.4,1019.2,"-","-","-","-",NA,NA,"25","Fine","N",5
+2,94645,"Eyre","IDW60701","30/09:00am","20160330090000","20160330010000",-32.2,126.3,"Mostly cloudy",NA,6,30,"-",NA,22.9,1026.3,"-","0.0","-","-",NA,NA,"30","Fine","CALM",0
+3,94645,"Eyre","IDW60701","30/06:00am","20160330060000","20160329220000",-32.2,126.3,"Mostly clear",NA,2,30,"-",NA,7.5,1025.8,"-","-","-","-",NA,NA,"25","Fine","CALM",0
+4,94645,"Eyre","IDW60701","29/09:00am","20160329090000","20160329010000",-32.2,126.3,"Mostly clear",NA,2,31,"-",NA,21.8,1026.6,"-","0.0","-","-",NA,NA,"20","Fine","SE",1
+5,94645,"Eyre","IDW60701","29/06:00am","20160329060000","20160328220000",-32.2,126.3,"Clear",2500,0,NA,"-",NA,7.8,1025.5,"-","-","-","-",NA,NA,"20","Fine","CALM",0

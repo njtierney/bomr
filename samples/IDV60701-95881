@@ -1,0 +1,6 @@
+"sort_order","wmo","name","history_product","local_date_time","local_date_time_full","aifstime_utc","lat","lon","cloud","cloud_base_m","cloud_oktas","cloud_type_id","cloud_type","gust_kt","air_temp","press","press_tend","rain_trace","sea_state","swell_dir_worded","swell_height","swell_period","vis_km","weather","wind_dir","wind_spd_kt"
+0,95881,"Wonthaggi","IDV60701","31/09:00am","20160331090000","20160330220000",-38.6,145.6,"Mostly cloudy",1000,6,34,"-",NA,15.1,1019.9,"-","0.0","-","-",NA,NA,"30","Fine","NW",8
+1,95881,"Wonthaggi","IDV60701","31/06:00am","20160331060000","20160330190000",-38.6,145.6,"Mostly cloudy",600,7,34,"-",NA,12.6,1019.2,"-","-","-","-",NA,NA,"30","Fine","WSW",3
+2,95881,"Wonthaggi","IDV60701","30/09:00am","20160330090000","20160329220000",-38.6,145.6,"Cloudy",2000,8,34,"-",NA,16,1020.2,"-","0.0","-","-",NA,NA,"30","Fine","SSW",10
+3,95881,"Wonthaggi","IDV60701","30/06:00am","20160330060000","20160329190000",-38.6,145.6,"Cloudy",1500,8,34,"-",NA,15.6,1019.2,"-","-","-","-",NA,NA,"30","Fine","SSE",7
+4,95881,"Wonthaggi","IDV60701","29/09:00am","20160329090000","20160328220000",-38.6,145.6,"Cloudy",1500,8,34,"-",NA,14.5,1021.7,"-","0.0","-","-",NA,NA,"30","Fine","SSE",3

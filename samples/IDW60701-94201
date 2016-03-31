@@ -1,0 +1,4 @@
+"sort_order","wmo","name","history_product","local_date_time","local_date_time_full","aifstime_utc","lat","lon","cloud","cloud_base_m","cloud_oktas","cloud_type_id","cloud_type","gust_kt","air_temp","press","press_tend","rain_trace","sea_state","swell_dir_worded","swell_height","swell_period","vis_km","weather","wind_dir","wind_spd_kt"
+0,94201,"Cygnet Bay","IDW60701","31/09:00am","20160331090000","20160331010000",-16.5,123,"Partly cloudy",NA,4,NA,"-",NA,32,1013,"-","0.0","-","-",NA,NA,"20","Fine","CALM",0
+1,94201,"Cygnet Bay","IDW60701","30/09:00am","20160330090000","20160330010000",-16.5,123,"Partly cloudy",NA,3,NA,"-",NA,33.4,1014,"-","0.0","-","-",NA,NA,"20","Fine","SSE",1
+2,94201,"Cygnet Bay","IDW60701","29/09:00am","20160329090000","20160329010000",-16.5,123,"Mostly clear",NA,2,NA,"-",NA,32.1,1015.1,"-","0.0","-","-",NA,NA,"20","Fine","CALM",0

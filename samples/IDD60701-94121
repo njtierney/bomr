@@ -1,0 +1,3 @@
+"sort_order","wmo","name","history_product","local_date_time","local_date_time_full","aifstime_utc","lat","lon","cloud","cloud_base_m","cloud_oktas","cloud_type_id","cloud_type","gust_kt","air_temp","press","press_tend","rain_trace","sea_state","swell_dir_worded","swell_height","swell_period","vis_km","weather","wind_dir","wind_spd_kt"
+0,94121,"Channel Point","IDD60701","31/09:00am","20160331090000","20160330233000",-13.2,130.1,"Mostly cloudy",NA,7,30,"-",NA,28,1013.3,"-","7.0","-","-",NA,NA,"28","Fine","CALM",0
+1,94121,"Channel Point","IDD60701","29/09:00am","20160329090000","20160328233000",-13.2,130.1,"Mostly clear",300,1,32,"Towering Cumulus",NA,30.1,1014.1,"-","35.0","-","-",NA,NA,"30","Fine","CALM",0

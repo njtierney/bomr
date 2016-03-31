@@ -1,0 +1,4 @@
+"sort_order","wmo","name","history_product","local_date_time","local_date_time_full","aifstime_utc","lat","lon","cloud","cloud_base_m","cloud_oktas","cloud_type_id","cloud_type","gust_kt","air_temp","press","press_tend","rain_trace","sea_state","swell_dir_worded","swell_height","swell_period","vis_km","weather","wind_dir","wind_spd_kt"
+0,95989,"Bicheno","IDT60701","31/09:00am","20160331090000","20160330220000",-41.9,148.3,"Clear",2500,0,NA,"-",NA,16.9,NA,"-","0.0","-","-",NA,NA,"35","Fine","SW",2
+1,95989,"Bicheno","IDT60701","30/09:00am","20160330090000","20160329220000",-41.9,148.3,"Cloudy",NA,8,NA,"-",NA,15.3,NA,"-","0.0","-","-",NA,NA,"35","Fine","SSW",2
+2,95989,"Bicheno","IDT60701","29/09:00am","20160329090000","20160328220000",-41.9,148.3,"Partly cloudy",NA,4,NA,"-",NA,12.5,NA,"-","0.0","-","-",NA,NA,"35","Fine","WSW",7

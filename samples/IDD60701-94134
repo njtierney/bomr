@@ -1,0 +1,4 @@
+"sort_order","wmo","name","history_product","local_date_time","local_date_time_full","aifstime_utc","lat","lon","cloud","cloud_base_m","cloud_oktas","cloud_type_id","cloud_type","gust_kt","air_temp","press","press_tend","rain_trace","sea_state","swell_dir_worded","swell_height","swell_period","vis_km","weather","wind_dir","wind_spd_kt"
+0,94134,"Black Point","IDD60701","31/09:00am","20160331090000","20160330233000",-11.2,132.1,"Partly cloudy",600,4,33,"-",NA,30.5,1012.3,"-","0.0","-","-",NA,NA,"25","Fine","CALM",0
+1,94134,"Black Point","IDD60701","30/09:00am","20160330090000","20160329233000",-11.2,132.1,"Partly cloudy",300,3,32,"Towering Cumulus",NA,30,1013.7,"-","0.0","-","-",NA,NA,"25","Fine","CALM",0
+2,94134,"Black Point","IDD60701","29/09:00am","20160329090000","20160328233000",-11.2,132.1,"Mostly clear",600,1,31,"-",NA,30.6,1014.2,"-","0.0","-","-",NA,NA,"25","Fine","CALM",0

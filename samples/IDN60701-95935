@@ -1,0 +1,7 @@
+"sort_order","wmo","name","history_product","local_date_time","local_date_time_full","aifstime_utc","lat","lon","cloud","cloud_base_m","cloud_oktas","cloud_type_id","cloud_type","gust_kt","air_temp","press","press_tend","rain_trace","sea_state","swell_dir_worded","swell_height","swell_period","vis_km","weather","wind_dir","wind_spd_kt"
+0,95935,"Narooma","IDN60701","31/03:00pm","20160331150000","20160331040000",-36.2,150.1,"Partly cloudy",NA,4,NA,"-",NA,22,NA,"-","0.0","1","S",1,10,"40","Fine","S",5
+1,95935,"Narooma","IDN60701","31/09:00am","20160331090000","20160330220000",-36.2,150.1,"Mostly clear",NA,1,NA,"-",NA,18,NA,"-","4.0","1","SE",1.5,10,"40","Fine","SW",3
+2,95935,"Narooma","IDN60701","30/03:00pm","20160330150000","20160330040000",-36.2,150.1,"Mostly cloudy",NA,7,NA,"-",NA,21.1,NA,"-","0.0","&lt;0.5","E",1,10,"60","Fine","SE",2
+3,95935,"Narooma","IDN60701","30/09:00am","20160330090000","20160329220000",-36.2,150.1,"Partly cloudy",NA,4,NA,"-",NA,19,NA,"-","5.0","1","SE",1,11,"30","Fine","W",2
+4,95935,"Narooma","IDN60701","29/03:00pm","20160329150000","20160329040000",-36.2,150.1,"Cloudy",NA,8,NA,"-",NA,19.3,NA,"-","Trace","&lt;0.5","E",1,10,"30","Fine","SW",7
+5,95935,"Narooma","IDN60701","29/09:00am","20160329090000","20160328220000",-36.2,150.1,"Cloudy",NA,8,NA,"-",NA,16.7,NA,"-","0.8","1","SE",1.5,11,"40","Fine","SW",6
