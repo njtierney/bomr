@@ -78,14 +78,20 @@ aust_not_noaa <- filter(bom_stations, !(site %in% noaa_stations$short_id))
 ex_aust_not_noaa <- paste0("GHCND:ASN",
                            sprintf("%08s",
                                    as.character(sample(aust_not_noaa$site, 200))))
+missing_stations <- 0
 for(i in 1:length(ex_aust_not_noaa)){
   ex <- ncdc_stations(stationid = ex_aust_not_noaa[i])$data
   if(i == 1){
     extra_stations <- ex
-  } else {
+  }else if(nrow(ex) == 1 & ncol(ex) == 9) {
     extra_stations <- rbind(extra_stations, ex)
+  }else if(nrow(ex) == 0){
+    missing_stations <- missing_stations + 1
   }
 }
-nrow(extra_stations) / length(ex_aust_not_noaa) # Percent of stations in NOAA
-
-ghcnd(stationid = ex_aust_not_noaa[1])
+missing_stations
+nrow(extra_stations)
+missing_stations / length(ex_aust_not_noaa)
+# It looks like around 15-20% of these stations aren't in the NOAA system, but
+# the rest are (based on a sample of 200 of the stations that we pulled from the
+# Australia monitor file but that didn't show up from the NOAA API call).
