@@ -29,8 +29,8 @@ gg <- gg + coord_map()
 gg <- gg + ggthemes::theme_map()
 gg
 
-load("data/all_aust_stations.RData")
-noaa <- all_aust_stations %>%
+load("data/all_noaa_stations.Rdata")
+noaa <- all_noaa_stations %>%
   mutate(maxdate = ymd(maxdate))
 current_noaa <- filter(noaa, year(maxdate) == 2016) # 795 current stations
 gg <- ggplot()
