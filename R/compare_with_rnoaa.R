@@ -100,17 +100,26 @@ missing_stations / length(ex_aust_not_noaa)
 # was limiting to just stations with the global daily summary and with
 # maximum temperature data)
 
-tot_stations <- ncdc_stations(limit = 1,
-                             locationid = "FIPS:AS")$meta$totalCount
-start_points <- seq(from = 1, to = tot_stations, by = 1000)
-for(i in 1:length(start_points)){
-  ex <- ncdc_stations(limit = 1000,
-                      locationid = "FIPS:AS",
-                      offset = start_points[i])$data
-  if(i == 1){
-    all_noaa_stations <- ex
-  } else {
-    all_noaa_stations <- rbind(all_noaa_stations, ex)
-  }
-}
+# tot_stations <- ncdc_stations(limit = 1,
+#                              locationid = "FIPS:AS")$meta$totalCount
+# start_points <- seq(from = 1, to = tot_stations, by = 1000)
+# for(i in 1:length(start_points)){
+#   ex <- ncdc_stations(limit = 1000,
+#                       locationid = "FIPS:AS",
+#                       offset = start_points[i])$data
+#   if(i == 1){
+#     all_noaa_stations <- ex
+#   } else {
+#     all_noaa_stations <- rbind(all_noaa_stations, ex)
+#   }
+# }
 dim(all_noaa_stations)
+#save(all_noaa_stations, file = "data/all_noaa_stations.Rdata")
+
+load("data/all_noaa_stations.Rdata")
+all_noaa_stations <- all_noaa_stations %>%
+  mutate(short_id = as.numeric(substring(id, 13, 17)))
+both_stations <- inner_join(bom_stations[ , c("site_name", "site", "lat", "lon")],
+                            all_noaa_stations[ , c("name", "short_id",
+                                                   "latitude", "longitude")],
+                            by = c("site" = "short_id"))
